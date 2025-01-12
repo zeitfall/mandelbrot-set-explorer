@@ -83,6 +83,13 @@ export default tseslint.config({
         '@stylistic/js/eol-last': ['warn', 'always'],
         '@stylistic/js/indent': ['warn', 4, { SwitchCase: 1 }],
         '@stylistic/js/key-spacing': 'warn',
+        '@stylistic/js/keyword-spacing': [
+            'warn',
+            {
+                before: true,
+                after: true,
+            },
+        ],
         '@stylistic/js/no-extra-parens': [
             'warn',
             'all',
@@ -92,7 +99,6 @@ export default tseslint.config({
             },
         ],
         '@stylistic/js/no-extra-semi': 'warn',
-        '@stylistic/js/no-mixed-operators': 'warn',
         '@stylistic/js/no-multiple-empty-lines': [
             'warn',
             {
@@ -115,7 +121,6 @@ export default tseslint.config({
                 },
             },
         ],
-        '@stylistic/js/padded-blocks': ['warn', { blocks: 'never', switches: 'never' }],
         '@stylistic/js/padding-line-between-statements': [
             'warn',
             {
@@ -140,6 +145,11 @@ export default tseslint.config({
             },
             {
                 blankLine: 'always',
+                prev: ['for'],
+                next: '*',
+            },
+            {
+                blankLine: 'always',
                 prev: 'import',
                 next: ['block-like', 'const', 'let', 'var', 'export', 'expression'],
             },
@@ -149,6 +159,7 @@ export default tseslint.config({
         '@stylistic/js/semi': ['warn', 'always'],
         '@stylistic/js/semi-spacing': 'warn',
         '@stylistic/js/semi-style': ['warn', 'last'],
+        '@stylistic/js/space-before-blocks': 'warn',
         '@stylistic/js/space-before-function-paren': [
             'warn',
             {

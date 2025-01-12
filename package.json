@@ -1,0 +1,24 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Template project",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": {
+    "name": "Vlad",
+    "email": "zzeitfall@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@stylistic/eslint-plugin-js": "^2.12.1",
+    "@stylistic/eslint-plugin-ts": "^2.12.1",
+    "eslint": "^9.18.0",
+    "typescript-eslint": "^8.19.1",
+    "vite": "^6.0.7"
+  }
+}

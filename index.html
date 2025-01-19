@@ -3,10 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./src/styles/App.css">
     </head>
 
     <body>
+        <table class="metrics">
+            <!-- <thead>
+                <tr>
+                    <th>Metric:</th>
+                    <th>Value:</th>
+                </tr>
+            </thead> -->
+
+            <tbody>
+                <tr>
+                    <td>Re:</td>
+                    <td id="re">-2.25, .75</td>
+                </tr>
+                <tr>
+                    <td>Im:</td>
+                    <td id="im">-1, 1</td>
+                </tr>
+                <tr>
+                    <td>Center:</td>
+                    <td id="center">-1, 1</td>
+                </tr>
+                <tr>
+                    <td>Rendered:</td>
+                    <td id="rendered">0ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <div id="container" style="width: 1024px; height: 768px"> -->
+            <canvas></canvas>
+        <!-- </div> -->
+
         <script type="module" src="./src/App.ts"></script>
     </body>
 </html>

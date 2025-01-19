@@ -1,0 +1,22 @@
+.metrics {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: min(24rem, 100%);
+    /* height: min(16rem, 100%); */
+    border-radius: .25rem;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 25%);
+    color: white;
+    font-size: .875rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+.metrics td, th {
+    padding: .5rem;
+}
+
+.metrics :is(th, td):nth-of-type(2) {
+    width: 80%;
+}
